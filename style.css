@@ -1,0 +1,169 @@
+/* Скидання стандартнихстиилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Стилі тіла*/
+body { 
+    background-color: #dcdcdc;
+    font-family: "Alegreya SC", serif;
+    padding: 20px;
+
+}
+
+/* Основний частина */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 1300px;
+}
+
+/* Ліва панель */
+.sidebar {
+    width: 260px;
+    background-color: #1C9904;
+    color: black;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Фото */
+.profile-photo {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* Заголовки зліва */
+.sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+     padding-bottom: 8px;
+     font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+
+    border-bottom: 1px solid #A2CCA7;
+
+    width: 200px;
+    
+}
+
+
+/* Текст зліва */
+.sidebar p,
+.sidebar li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Список */
+.sidebar ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Відступи міжблоками */
+.contacts,
+.skills,
+.languages {
+    margin-bottom: 50px;
+}
+
+/* права частина */
+.content {
+    flex: 1;
+    background-color: #A2CCA7;
+    padding: 50px;
+}
+
+/* імя заголовок */
+h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+}
+
+/* Професія */
+.profession {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+/* Про себе */
+.about {
+    margin-bottom: 50px;
+}
+
+.about p {
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+/* Інформаційні блоки */
+.info-block {
+    margin-bottom: 40px;
+}
+
+
+/* Заголовки  */
+.info-block h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #6aa06f;
+    padding-bottom: 5px;
+    width: 100%
+}
+
+/* Текст */
+.info-block p,
+.info-block li {
+    font-size: 24px;
+    line-height: 1.7;
+    font-family: "Alegreya SC", serif;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .info-block p,
+    .info-block li,
+    .sidebar p,
+    .sidebar li {
+        font-size: 18px;
+    }
+    .profile-photo {
+    max-width: 100%;
+    height: auto;
+}
+}
